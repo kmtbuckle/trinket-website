@@ -1,0 +1,40 @@
+.trinket-header {
+  background: #fffaf6;
+  border-bottom: 1px solid #ead6de;
+  font: 600 1rem/1.4 Arial, sans-serif;
+}
+
+.trinket-header__inner {
+  max-width: 72rem;
+  margin: auto;
+  padding: 12px clamp(16px, 4vw, 32px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.trinket-header__logo img {
+  display: block;
+  width: clamp(130px, 34vw, 200px);
+  height: auto;
+}
+
+.trinket-header nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 3vw, 24px);
+}
+
+.trinket-header nav a {
+  color: #321b31;
+  text-decoration: none;
+  padding-block: 12px;
+}
+
+.trinket-header nav a:hover,
+.trinket-header nav a[aria-current="page"] {
+  color: #a51653;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
